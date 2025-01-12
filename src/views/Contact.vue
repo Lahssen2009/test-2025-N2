@@ -1,4 +1,8 @@
 <template>
+  <header>
+    <router-view></router-view>
+
+  </header>
   <div id="videos">
     <h1>Featured YouTube Videos</h1>
     <div class="video-grid">
@@ -12,6 +16,7 @@
         allowfullscreen>
       </iframe>
     </div>
+    
   </div>
 </template>
 
@@ -34,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
+header {
+  
+}
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
